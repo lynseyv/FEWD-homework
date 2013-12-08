@@ -1,0 +1,216 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+body {
+     font-family: 'Source Sans Pro', sans-serif;;
+}
+
+#header-title {
+     background: black;
+     border-bottom: 4px solid yellow;
+     margin: -20px 0px 0px 0px;
+     padding: 20px 30px 20px 30px;
+     overflow: hidden;
+}
+
+#header-title h1 a {
+     color: yellow;
+     text-decoration: none;
+     float: left;
+     font-size: 28px;
+}
+
+#header-title nav {
+     float: right;
+}
+
+#header-title nav li {
+     float: left;
+     display: block;
+     padding: 0px 15px;
+     font-size: 18px;
+}
+
+#header-title nav a {
+     color: white;
+     list-style: none;
+     text-decoration: none;
+}
+
+.sub-title {
+     text-align: center;
+     background: #C6C6C6;
+     padding: 20px;
+     margin: 0;
+     font-size: 24px;
+     font-style: italic;
+}
+
+del {
+     color: gray;
+}
+
+ins {
+     border-bottom: 3px solid yellow;
+     text-decoration: none;
+}
+
+#main-picture {
+     background: url('../images/coworking.jpg') center center no-repeat;
+     overflow: hidden;
+     background-size: cover;
+     box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+     padding: 30px;
+     height: 430px;
+}
+
+#match-box {
+     float: right;
+     width: 40%;
+     padding: 2% 4% 4% 4%;
+     background: rgba(255,255,255,.8);
+     box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+h2 {
+     font-size: 26px;
+     font-weight: bold;
+}
+
+p {
+     font-size: 18px;
+}
+
+.button {
+     text-decoration: none;
+     color: black;
+     background: yellow;
+     letter-spacing: 1px;
+     font-weight: bold;
+     display: block;
+     text-align: center;
+     padding: 12px;
+     box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+     border-radius: 5px;
+     font-size: 18px;
+}
+
+#three-floats .button {
+     background: #C6C6C6;
+}
+
+#container {
+     width: 100%;
+}
+
+
+#three-floats {
+     display: inline-block;
+     width: 80%;
+     padding: 2% 0;
+     overflow: hidden;
+     margin: 0 8%;
+}
+
+#profile {
+     float: left;
+     width: 33%;
+     padding: 2% 3%;
+     box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+
+#developer {
+     float: left;
+     width: 33%;
+     padding: 2% 3%;
+     box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+
+#designer {
+     float: left;
+     width: 33%;
+     padding: 2% 3%;
+}
+
+#footer p {
+     color: white;
+     background: black;
+     margin: 0;
+     padding: 2%;
+     font-size: 16px;
+     letter-spacing: .5px;
+}
