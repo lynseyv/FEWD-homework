@@ -1,0 +1,270 @@
+/* 
+Project Name: Citadel Pro A/V
+Client: Matt Smith @ Citadel Pro A/V
+Author: Lynsey Vallandingham
+Developer @GA in Boston
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     transition: width .5s, height .5s, transform .5s;
+     -webkit-transition: width .5s, height .5s, -webkit-transform .5s;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; 
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: .85em;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+#container {
+	width: 100%;
+	margin: auto;
+}
+header {
+     background: #CF5300;
+     overflow: hidden;
+     padding: 10px;
+     -webkit-box-shadow: 1px 1px 5px 1px #666666;
+     box-shadow: 1px 1px 5px 1px #666666;
+     position: fixed;
+     width: 100%;
+}
+
+footer {
+     padding: 40px;
+}
+
+header>nav {
+     float: right;
+     display: inline-block;
+     padding-right: 10px;
+}
+
+header>h1 {
+     float: left;
+     color: white;
+     letter-spacing: .2em;
+     font-family: 'Orienta';
+     font-size: 2.6em;
+     padding-left: 20px;
+     margin: 0;
+}
+
+nav a {
+     color: white;
+     text-decoration: none;
+     font-family: 'Orienta';
+     font-size: 1.5em;
+}
+
+nav a:hover {
+     text-decoration: none;
+     color: #ED9051;
+}
+
+nav li {
+     display: inline-block;
+     margin-right: 40px;
+}
+
+.body h2 {
+     font-size: 3em;
+     line-height: 1;
+}
+
+.body h3 {
+     font-size: 2.5em;
+     color: #525266;
+}
+
+.body h4 {
+     font-size: 1.5em;
+     color: #525266;
+}
+
+.colors {
+     -webkit-filter: grayscale(100%); 
+}
+
+.vid-box {
+     width: 25%;
+     float: left;
+     padding: 5px;
+     margin-bottom: 5px;
+     display: inline-block;
+     cursor: pointer;
+}
+
+#vid-wrapper {
+     overflow: auto;
+     width: 100%;
+     padding-left: 20px;
+}
+
+#intro {
+     padding: 20px 0 40px 40px;
+     border-bottom: 2px solid #666;
+}
+
+#about-us {
+     padding: 35px;
+     border-bottom: 2px solid #666;
+}
+
+#media {
+     padding: 35px;
+     border-bottom: 2px solid #666;
+     width: 100%;
+}
+
+#services{
+     padding: 35px;
+     border-bottom: 2px solid #666;
+}
+
+#contact {
+     padding: 35px;
+     border-bottom: 2px solid #666;
+}
+
+#body-wrapper {
+     padding: 70px 0;
+     margin-right: 40px;
+     margin-left: 20px;
+}
+
+
+/* Popup Box */
+#popup-box-1, #popup-box-2, #popup-box-3, #popup-box-4, #popup-box-5, #popup-box-6, #popup-box-7, #popup-box-8, #popup-box-9, #popup-box-10, #popup-box-11 { 
+    display:none; 
+    position:fixed;  
+    _position:absolute; 
+    height:370px;  
+    width:530px;  
+    background:#FFFFFF;  
+    left: 300px;
+    top: 150px;
+    z-index:100; 
+    margin-left: 15px;  
+    border: 1px solid #ff7f00;      
+    padding:15px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 2px #ff7f00;
+    -webkit-box-shadow: 0 0 2px #ff7f00;
+    box-shadow: 0 0 2px #ff7f00;
+    text-decoration: none;   
+}
+
+#vid-wrapper a {
+     color: #ff7f00;
+}
+
+a {  
+    cursor: pointer;  
+    text-decoration:none;  
+} 
+
+/* This is for the positioning of the Close Link */
+#popupBoxCloseOne, #popupBoxCloseTwo, #popupBoxCloseThree, #popupBoxCloseFour, #popupBoxCloseFive, #popupBoxCloseSix, #popupBoxCloseSeven, #popupBoxCloseEight, #popupBoxCloseNine, #popupBoxCloseTen, #popupBoxCloseEleven {
+    font-family: Helvetica;
+    font-size:16px;  
+    line-height:12px; 
+    text-transform: uppercase; 
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    font-weight:500;    
+    border: 1px solid black;  
+    padding: 2px;
+}
+
+
+
+
+/* iPhone */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+     #intro { 
+          margin-top: 35px; 
+     }
+     header>h1 {
+          font-size: 2.6em;
+          padding-left: 40px;
+     }
+     nav li {
+          font-size: .7em;
+          padding-right: 7px;
+     }
+
+     #media {
+          padding-left: 40px;
+     }
+
+     #media img {
+          display: block;
+          width: 320px;
+          margin: 0 auto;
+     }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+     #intro { 
+          margin-top: 40px; 
+     }
+     #media {
+          padding-left: 30px;
+     }
+
+     #media img {
+          display: block;
+          width: 200px;
+          margin: 0 auto;
+     }
+
+}
+
+
+
+
