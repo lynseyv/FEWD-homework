@@ -1,5 +1,6 @@
 // J
 
+//HOVER ANIMATIONS
 // $('.vid-box').hover(function() {
 // $(this).toggleClass('colors');
 // });
@@ -24,16 +25,16 @@ $('#popupBoxCloseOne').click( function() {
 	unloadPopupBoxOne();
 });
 
-function unloadPopupBoxOne() {    // TO Unload the Popupbox
+function unloadPopupBoxOne() {    
 	$('#popup-box-1').fadeOut("slow");
-	$("#vid-1").css({ // this is just for style        
+	$("#vid-1").css({     
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxOne() {    // To Load the Popupbox
+function loadPopupBoxOne() {    
 	$('#popup-box-1').fadeIn("slow");
-    $("#vid-1").css({ // this is just for style
+    $("#vid-1").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -51,16 +52,16 @@ $('#popupBoxCloseTwo').click( function() {
 	unloadPopupBoxTwo();
 });
 
-function unloadPopupBoxTwo() {    // TO Unload the Popupbox
+function unloadPopupBoxTwo() {    
 	$('#popup-box-2').fadeOut("slow");
-	$("#vid-2").css({ // this is just for style        
+	$("#vid-2").css({      
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxTwo() {    // To Load the Popupbox
+function loadPopupBoxTwo() {    
 	$('#popup-box-2').fadeIn("slow");
-    $("#vid-2").css({ // this is just for style
+    $("#vid-2").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -78,16 +79,16 @@ $('#popupBoxCloseThree').click( function() {
 	unloadPopupBoxThree();
 });
 
-function unloadPopupBoxThree() {    // TO Unload the Popupbox
+function unloadPopupBoxThree() {    
 	$('#popup-box-3').fadeOut("slow");
-	$("#vid-3").css({ // this is just for style        
+	$("#vid-3").css({        
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxThree() {    // To Load the Popupbox
+function loadPopupBoxThree() {   
 	$('#popup-box-3').fadeIn("slow");
-    $("#vid-3").css({ // this is just for style
+    $("#vid-3").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -105,16 +106,16 @@ $('#popupBoxCloseFour').click( function() {
 	unloadPopupBoxFour();
 });
 
-function unloadPopupBoxFour() {    // TO Unload the Popupbox
+function unloadPopupBoxFour() {    
 	$('#popup-box-4').fadeOut("slow");
-	$("#vid-4").css({ // this is just for style        
+	$("#vid-4").css({         
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxFour() {    // To Load the Popupbox
+function loadPopupBoxFour() {    
 	$('#popup-box-4').fadeIn("slow");
-    $("#vid-4").css({ // this is just for style
+    $("#vid-4").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -132,16 +133,16 @@ $('#popupBoxCloseFive').click( function() {
 	unloadPopupBoxFive();
 });
 
-function unloadPopupBoxFive() {    // TO Unload the Popupbox
+function unloadPopupBoxFive() {  
 	$('#popup-box-5').fadeOut("slow");
-	$("#vid-5").css({ // this is just for style        
+	$("#vid-5").css({      
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxFive() {    // To Load the Popupbox
+function loadPopupBoxFive() {    
 	$('#popup-box-5').fadeIn("slow");
-    $("#vid-5").css({ // this is just for style
+    $("#vid-5").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -159,16 +160,16 @@ $('#popupBoxCloseSix').click( function() {
 	unloadPopupBoxSix();
 });
 
-function unloadPopupBoxSix() {    // TO Unload the Popupbox
+function unloadPopupBoxSix() {  
 	$('#popup-box-6').fadeOut("slow");
-	$("#vid-6").css({ // this is just for style        
+	$("#vid-6").css({       
 		"opacity": "1"  
 			}); 
 }    
         
-function loadPopupBoxSix() {    // To Load the Popupbox
+function loadPopupBoxSix() {   
 	$('#popup-box-6').fadeIn("slow");
-    $("#vid-6").css({ // this is just for style
+    $("#vid-6").css({ 
         "opacity": "0.3"  
             });         
         }        
@@ -310,4 +311,15 @@ function loadPopupBoxEleven() {
     });
 
 
+//GOOGLE MAP
+function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(42.3592719, -71.1294684),
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
 

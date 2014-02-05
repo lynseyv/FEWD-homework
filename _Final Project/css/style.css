@@ -110,6 +110,17 @@ nav li {
      margin-right: 40px;
 }
 
+footer {
+    color: gray;
+    height: 30px;
+}
+
+footer p {
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
 .body h2 {
      font-size: 3em;
      line-height: 1;
@@ -138,6 +149,7 @@ nav li {
      cursor: pointer;
 }
 
+
 #vid-wrapper {
      overflow: auto;
      width: 100%;
@@ -152,6 +164,11 @@ nav li {
 #about-us {
      padding: 35px;
      border-bottom: 2px solid #666;
+}
+
+#about-us p {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 #media {
@@ -174,8 +191,88 @@ nav li {
      padding: 70px 0;
      margin-right: 40px;
      margin-left: 20px;
+     padding-bottom: 0;
 }
 
+#digital-video {
+    padding-right: 200px;
+    padding-left: 40px;
+}
+
+#digital-video h3 {
+    margin-bottom: 10px;
+}
+
+#audio-capture {
+    padding-right: 200px;
+    padding-left: 40px;
+}
+
+#audio-capture h3 {
+    margin-bottom: 10px;
+}
+
+#audio-capture p {
+    margin-top: 0;
+}
+
+#editing {
+    padding-right: 200px;
+    padding-left: 40px;
+}
+
+#gear {
+    padding-right: 200px;
+    padding-left: 40px;
+}
+
+#gear div {
+    padding-left: 50px;
+}
+
+#addresses {
+    float: left;
+    margin-right: 300px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+/* Google Map */
+#map_canvas {
+    width: 350px;
+    height: 250px;
+    float: left;
+}
+
+#contact>#addresses {
+    font-size: 28px;
+}
+
+#addresses a:first-child {
+    color: #ef721f;
+}
+
+#email-btn {
+    text-decoration: none;
+    color: black;
+    background: #ef721f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+    font-size: 18px;
+    width: 300px;
+}
+
+#social {
+    float: right;
+    padding-right: 50px;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
 
 /* Popup Box */
 #popup-box-1, #popup-box-2, #popup-box-3, #popup-box-4, #popup-box-5, #popup-box-6, #popup-box-7, #popup-box-8, #popup-box-9, #popup-box-10, #popup-box-11 { 
@@ -247,6 +344,36 @@ a {
           width: 320px;
           margin: 0 auto;
      }
+
+     #about-us p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #digital-video {
+        padding-right: 50px;
+        padding-left: 8px;
+    }
+
+    #audio-capture {
+        padding-right: 50px;
+        padding-left: 8px;
+    }
+
+    #editing {
+        padding-right: 50px;
+        padding-left: 8px;
+    }
+
+    #gear {
+        padding-right: 50px;
+        padding-left: 8px;
+    }
+
+    #gear div {
+        padding-left: 15px;
+    }
+
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {

@@ -9,7 +9,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Orienta|Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -40,7 +42,7 @@
 					</ul>
 				</div><a name="aboutus"></a>
 				<div id="about-us">
-					<h2>About Us</h2>
+					<h2 class="fa fa-user">&nbsp; About Us</h2>
 					<p>Hi. I'm Matt. I like to make things.</p>
 					<p>If you're in any way familiar with popular media — such as the Internet — you've probably noticed that the demand for high-quality video and audio has recently skyrocketed. Thousands of business, organizations and individuals have found themselves in a world where a multimedia presence is a necessity.</p>
 					<p>Fortuitously, we also live in a world where the cost of high-quality equipment has drastically decreased. DSLRs now allow millions of filmmakers a level of production  value that was completely out of reach of the average person 10 years ago. Home recording studios and project studios have become commonplace for budding producers and musicians. Indeed, with the proper skill, one can produce stunning pieces of media at a fraction of the traditional cost.</p>
@@ -133,19 +135,19 @@
 					<p>We offer a variety of services to meet your needs. We are flexible and open to negotiating many different types of projects.</p>
 					<p>Student rates are available.</p>
 					<div id="digital-video">
-						<h3>DIGITAL VIDEO</h3>
+						<h3 class="fa fa-caret-square-o-right">&nbsp; Digital Video</h3>
 	 					<p>Stunning HD video, captured with high quality lenses and powerful camera bodies.  A variety of rigging equipment allows us to shoot in virtually any scenario.</p>
 					</div>
 					<div id="audio-capture">
-						<h3>AUDIO CAPTURE</h3>
+						<h3 class="fa fa-caret-square-o-right">&nbsp; Audio Capture</h3>
 	​					<p>Exceptional audio recording using broadcast and studio standard 							microphones and professional-level recording devices. All audio 							captured at 48khz, 24-bit, for optimal fidelity and usability.</p>
 					</div>
 					<div id="editing">
-						<h3>EDITING</h3>
+						<h3 class="fa fa-caret-square-o-right">&nbsp; Editing</h3>
 						<p>Post-production and editing, fine-tuned to your needs, using Final Cut Pro, Logic Pro, Motion, Photoshop and other industry standard editing suites.</p>
 					</div>
 					<div id="gear">
-						<h3>Gear</h3>
+						<h3 class="fa fa-caret-square-o-right">&nbsp; Gear</h3>
 						<div id="g-cameras">
 							<h4>Cameras</h4>
 							<ul>
@@ -217,22 +219,24 @@
 						</div>
 					</div>
 				</div><a name="contact"></a>
-				<div id="contact">
+				<div id="contact" class="clearfix">
 					<h2>Contact</h2>
 					<div id="addresses">
-						<p>32 Arden Street
+						<p>32 Arden Street &nbsp;
 						Allston, MA 02134</p>
-	​					<a href="mailto:citadelproav@gmail.com">email<a>
-						<p>207-272-2047</p>
+						<p><a href="tel:207-272-2047"><i class="fa fa-phone-square">&nbsp; 207.272.2047</i></a></p>
+	​					<a id ="email-btn" href="mailto:citadelproav@gmail.com">EMAIL US<a>
 					</div>
-					<div id="form">
-					</div>
+					<div id="map_canvas"></div>
 				</div>	
 		</div>
-			<footer>
-				&copy; LRV
-			</footer>
 		</div><!-- #container --> 
+		<footer>		
+			<div id="social">
+				<i class="fa fa-twitter"></i> &nbsp; <i class="fa fa-facebook"></i> &nbsp; <i class="fa fa-instagram"></i> &nbsp; <i class="fa fa-vimeo-square"></i> &nbsp; <i class="fa fa-tumblr"></i> &nbsp; <i class="fa fa-linkedin"></i> &nbsp; <i class="fa fa-google-plus"></i>
+			</div>
+			<p>&copy; LRV</p>
+		</footer>
 		<script src="js/main.js"></script>
 	</body>
 </html>
